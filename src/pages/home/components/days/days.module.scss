@@ -1,0 +1,90 @@
+@import "../../../../styles/variables.scss";
+
+.days {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-shadow: $shadow;
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    background-color: var(#{--components-bg-default});
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(#{--card-bg-default});
+    border-radius: 10px;
+    padding: 10px;
+    width: 149px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    .day {
+        margin-bottom: 7px;
+        font-size: 18px;
+        color: var(#{--text-color-default});
+    }
+
+    .day__info {
+        margin-bottom: 12px;
+        font-size: 14px;
+        color: $base-color;
+    }
+
+    .day__icon {
+        margin-bottom: 12px;
+    }
+
+    .temp__day {
+        font-size: 18px;
+        color: var(#{--text-color-default});
+    }
+
+    .temp__night {
+        font-size: 13px;
+        margin-bottom: 6px;
+        color: $base-color;
+    }
+
+    .info {
+        font-size: 13px;
+        color: $base-color;
+    }
+
+    &:hover {
+        box-shadow: 0 3px 20px rgba(147, 144, 144, 0.20);
+    }
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+
+    .tabs__wrapper {
+        display: flex;
+
+        .tab {
+            margin-right: 15px;
+
+            &.active {
+                background-color: $primary-color;
+                color: var(#{--text-color-dark});
+            }
+        }
+    }
+
+    .tab,
+    .tab__cancel>button {
+        box-shadow: $shadow;
+        border-radius: 5px;
+        border: none;
+        background-color: var(#{--components-bg-default});
+        padding: 9px 20px;
+        font-size: 18px;
+        color: var(#{--text-color-default});
+        cursor: pointer;
+    }
+}

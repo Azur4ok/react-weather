@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+
+.header {
+    background-color: var(#{--body-bg-default});
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 30px 0;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+
+    .theme,
+    .logo {
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .logo {
+        svg {
+            width: 65px;
+            height: 65px;
+
+        }
+    }
+
+    .title {
+        color: $primary-color;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+}

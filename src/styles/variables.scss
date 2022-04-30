@@ -1,0 +1,31 @@
+$light_background: #fff;
+$light-text-color: #000;
+
+$shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+$primary-color: #4793FF;
+$base-color: #939CB0;
+
+$card-bg-dark: #2E3035;
+$card-bg-light: rgba(71, 147, 255, 0.2);
+
+$dark-background: #0D1117;
+$dark-element-background: #4F4F4F;
+$dark-text-color: #fff;
+
+:root {
+    --body-bg-dark: #{$dark-background};
+    --body-bg-light: #{$light_background};
+    --body-bg-default: var(#{--body-bg-light});
+
+    --components-bg-dark: #{$dark-element-background};
+    --components-bg-light: #{$light_background};
+    --components-bg-default: var(#{--components-bg-light});
+
+    --card-bg-dark: #{$card-bg-dark};
+    --card-bg-light: #{$card-bg-light};
+    --card-bg-default: var(#{--card-bg-light});
+
+    --text-color-dark: #{$dark-text-color};
+    --text-color-light: #{$light-text-color};
+    --text-color-default: var(#{--text-color-dark});
+}

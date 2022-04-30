@@ -1,0 +1,57 @@
+@import "../../../../styles/variables.scss";
+
+.this__day {
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    background-color: var(#{--components-bg-default});
+    box-shadow: $shadow;
+    border-radius: 20px;
+
+    .top__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 30px;
+
+        .this__day_temp {
+            color: $primary-color;
+            font-size: 96px;
+            font-weight: 500;
+        }
+
+        .this__day_day {
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 49px;
+            margin: -10px 0 10px 0;
+            color: var(#{--text-color-default});
+        }
+
+        svg {
+            width: 119px;
+            height: 119px;
+        }
+    }
+
+    .bottom__block {
+        margin-bottom: 20px;
+
+        .this__time, 
+        .this__city {
+            color: $base-color;
+            font-size: 25px;
+            font-weight: 400;
+
+            .this__time_time {
+                margin-left: 10px;
+            } 
+
+            .this__city_name {
+                margin-left: 22px;
+            }
+        }
+    }
+
+}
